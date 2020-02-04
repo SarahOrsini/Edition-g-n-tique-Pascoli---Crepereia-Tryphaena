@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+
+
+ 
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Draft n°2</title>
+            <!-- ordre des brouillons réorganisé, différent de celui de l'archive -->
+            <author>Giovanni Pascoli</author>
+            <editor>Sarah Orsini</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier xml:id="CT_BR2">
+                  <country>Italy</country>
+                  <settlement>Castelvecchio Pascoli</settlement>
+                  <repository>Archivio Casa Pascoli</repository>
+                  <idno>G.62.3.1.6</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>
+                           <height/>
+                           <width/>
+                        </extent>
+                        <!-- dimension -->
+                        <foliation/>
+                        <!-- nombre de pages -->
+                        <condition/>
+                        <!-- état du manuscrit, déchirures etc -->
+                     </supportDesc>
+                     <!-- description des matériaux et marque -->
+                     <layoutDesc>
+                        <layout columns="2"/>
+                        <!-- existe aussi l'@writtenLines pr nb de lignes-->
+                     </layoutDesc>
+                     <!-- description de la mise en page -->
+                  </objectDesc>
+                  <!-- le codex lui-même -->
+                  <handDesc>
+                    <!-- déclarer les mains qui ont écrit le document -->
+                     <p></p>
+                  </handDesc>
+                  <bindingDesc>
+                     <p/>
+                  </bindingDesc>
+                  <!-- quel type de reliure ? cahier ou feuilles -->
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <listChange ordered="true">
+               <change xml:id="s1">Pascoli writes an italian version of "Crepereia Tryphaena" with instant corrections. With ink.</change>
+               <change xml:id="s2">Pascoli writes an other poem named "Epithalamion" in italian. With ink.</change>
+               <change xml:id="s3">Tests on the title "Crepereia Tryphaena". With ink.</change>
+               <change xml:id="s4">Pascoli writes what will be the last stanza of "Crepereia Tryphaena", in latin. With ink.</change>
+               <change xml:id="s5">Work on "Gallus Moriens". By Pascoli using ink.</change>
+               <change xml:id="s6">Non textual elements by Pascoli, using ink.</change>
+               <change xml:id="s7">Classification elements by Maria Pascoli, using pencil.</change>
+               <change xml:id="s8">Classification elements by the archive, unsing pencil.</change>
+            </listChange>
+         </creation>
+         <langUsage>
+            <language ident="it">italian</language>
+            <language ident="la">latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url=""><!-- mettre ici le lien du facsimilé --></graphic>
+   </facsimile>
+   <text>
+       
+      <body resp="#Pascoli">
+         
+         <div rend="text-align:right;">
+            <metamark resp="#MariaPascoli" function="classification"
+               rend="pencil" change="#s7">1</metamark>
+            <lb/>
+            <metamark resp="#Archive" function="classification" rend="pencil"
+               change="#s8">LXII-3-1.6</metamark>
+         </div>
+         
+         <div change="#s5" xml:lang="la">
+            <div rend="leftColumn">
+               <head>
+                  <w>Gallus</w>
+                  <w>moriens</w>
+                  <pc>.</pc>
+               </head>
+               <lb/>
+            </div>
+            <div rend="rightColumn">
+               <p>
+                  <w>Muller</w>
+                  <pc>.</pc>
+                  <w>Saffico</w>
+                  <lb/>
+                  <w>Alcaic.</w>
+                  <w>o</w>
+                  <hi rend="central underline">
+                     <w>Asclep.</w>
+                     <w>sescuplex</w></hi>
+                  <pc>.</pc>
+                  <lb/>
+               </p>
+               <lg met="asclepiadStanza">
+                  <l met="asclepiadeusMinor">
+                     &#x1DC4;&#x2013;&#x1DC4;&#x23D1;&#x23D1;&#x1DC4;‖&#x1DC4;&#x23D1;&#x23D1;&#x1DC4;&#x23D1;&#x23D3;&#x0301;
+                  </l>
+                  <l>ter</l>
+                  <l met="glyconic"
+                     >&#x1DC4;&#x2013;&#x1DC4;&#x1DC4;&#x23D1;&#x1DC4;&#x1DC4;&#x23D3;&#x0301;</l>
+               </lg>
+            </div>
+         </div>
+
+         <div xml:lang="it" change="#s1" rend="leftColumn">
+            <head xml:lang="la" corresp="#ln0" ana="a">
+               <hi rend="central underline as title mark"><w corresp="#w1" ana="a">Crepereia</w>
+                  <w corresp="#w2" ana="a">T
+                     <mod type="subst"  ana="correct" cause="orthograph" instant="true">
+                        <del rend="overstrike">h</del>
+                        <add rend="overwritten">r</add>
+                     </mod>yphaena</w></hi>
+               <pc>.</pc>
+            </head>
+
+            <lb/>
+            <lb/>
+            <lb/>
+            <p>
+               <lg met="freeVerses">
+                  <seg corresp="#lg3" ana="a">
+                     <l corresp="#ln10" ana="a">
+                        <w>Il</w>
+                        <w>tuo</w>
+                        <w>cranio</w>
+                        <w>fioriva</w>
+                        <w>di</w>
+                        <w corresp="#w42" ana="a">capelvenere</w>
+                     </l>
+                     <l corresp="#ln10 #ln11" ana="b b">
+                        <w corresp="#w44" ana="a">ondeggiante</w>
+                        <w corresp="#w41" ana="a">sull'</w>
+                        <w corresp="#w43" ana="a">aqua</w>
+                        <pc>.</pc>
+                     </l>
+                     <l corresp="#ln9" ana="a">
+                        <w>E</w>
+                        <w>l'</w>
+                        <w corresp="#w37" ana="a">aqua</w>
+                        <seg corresp="#w38" ana="a">
+                           <w>ti</w>
+                           <w>copriva</w>
+                        </seg>
+                        <seg corresp="#w34" ana="a">
+                           <w>come</w>
+                           <w>un</w>
+                           <w>velo</w>
+                        </seg>
+                     </l>
+                  </seg>
+                  <l>
+                     <!-- identifier avec br précédents-suivants -->
+                     <w>le</w>
+                     <w>ossa</w>
+                     <w>che</w>
+                     <w>parvero</w>
+                     <w>coperte</w>
+                     <w>della</w>
+                     <w>loro</w>
+                  </l>
+
+                  <l>
+                     <!-- lien avec autres br -->
+                     <w>carne</w>
+                     <w>giovanile</w>
+                     <pc>;</pc>
+                  </l>
+               </lg>
+               <seg corresp="#lg2" ana="a">
+                  <l corresp="#ln7 ln8" ana="a">
+                     <w corresp="#w29" ana="a">dopo</w>
+                     <num corresp="#w30" ana="a">1500</num>
+                     <w corresp="#w32" ana="a">anni</w>
+                     <w>apparisti</w>
+                     <w>col</w>
+                  </l>
+                  <l corresp="#ln39" ana="a">
+                     <!-- lien avec br 1  -->
+                     <w corresp="#w164" ana="b">capo</w>
+                     <!-- ce brouillon explique pourquoi elle a le cou plié-->
+                     <w corresp="#w166" ana="a">rivolto</w>
+                     <w>alla</w>
+                     <w>pupa</w>
+                     <w>memore</w>
+                     <w>della</w>
+                  </l>
+                  <l>
+                     <w>tua</w>
+                     <w>puerizia</w>
+                     <pc>,</pc>
+                     <seg corresp="#w31" ana="a">
+                        <w>con</w>
+                        <w>in</w>
+                        <w>dito</w>
+                     </seg>
+                  </l>
+                  <l corresp="#ln7 ln8" ana="b">
+                     <w>l'</w>
+                     <w corresp="#w33" ana="a">anello</w>
+                     <w corresp="#w28" ana="a">pronubo</w>
+                     <pc>.</pc>
+                  </l>
+                  <l xml:lang="la" corresp="#ln7 #ln8" ana="c" xml:id="metamark1">
+                     <w corresp="#w28" ana="b">pronubam</w>
+                     <w corresp="#w33" ana="b">gemmam</w>
+                     <w>digito</w>
+                  </l>
+                  <metamark rend="underline" function="memory" target="#metamark1"/>
+               </seg>
+               <seg corresp="#lg4" ana="a"><!-- correspond mais contenu changé : ici "je" / texte fini : larmes d'un autre, métempsychose -->
+                  <l>
+                     <w>Ma</w>
+                     <w>forse</w>
+                     <w>io</w>
+                     <w>ti</w>
+                     <w>ho</w>
+                     <w>veduta</w>
+                     <pc>:</pc>
+                     <w>forse</w>
+                  </l>
+                  <l>
+                     <w>t'</w>
+                     <w>ho</w>
+                     <w>conosciuta</w>
+                     <pc>:</pc>
+                  </l>
+               </seg>
+               <l>
+                  <w>Le</w>
+                  <w>tue</w>
+                  <w>ossa</w>
+                  <w>si</w>
+                  <w>vestono</w>
+                  <pc>;</pc>
+                  <w>bianca</w><!-- lien avec brouillon 4, strophe 10 à rajouter -->
+                  <w>appari</w>
+               </l>
+               <l>
+                  <w>triste</w>
+                  <w>nel</w>
+                  <w>bianco</w>
+                  <w>bisso</w>
+                  <pc>.</pc>
+                  <w>I</w>
+                  <w corresp="#w168" ana="a">capelli</w>
+                  <!-- lien à faire avec brouillon 4 strophe 10 (blanche neige) -->
+               </l>
+               <l>
+                  <w>neri</w>
+                  <w corresp="#w167" ana="a">ondeggianti</w>
+                  <pc>,</pc>
+                  <w>i</w>
+                  <w>grandi</w>
+                  <w>occhi</w>
+               </l>
+               <l>
+                  <w>Così</w>
+                  <w>ti</w>
+                  <w>vedevo</w>
+                  <!-- lien à faire avec autres br -->
+                  <w>alla</w>
+                  <w>finestra</w>
+               </l>
+               <l>
+                  <w>della</w>
+                  <w>tua</w>
+                  <w>casa</w>
+                  <w>adornare</w>
+               </l>
+               <l>
+                  <w>la</w>
+                  <w>tua</w>
+                  <w>bambola</w>
+                  <space quantity="2" unit="cm"/>
+                  <pc>,</pc>
+                  <w>o</w>
+                  <w>pettinarti</w>
+                  <pc>.</pc>
+               </l>
+               <l>
+                  <w>Poi</w>
+                  <pc>,</pc>
+                  <w>un</w>
+                  <w>giorno</w>
+                  <pc>(</pc>
+                  <w>per</w>
+                  <w>caso</w>
+                  <pc>)</pc>
+                  <w>t'</w>
+                  <w>incontrai</w>
+               </l>
+               <l>
+                  <w>che</w>
+                  <w>colla</w>
+                  <w>veneranda</w>
+                  <w>madre</w>
+                  <w>tra</w>
+                  <w>le</w>
+                  <w>siepi</w>
+               </l>
+               <l>
+                  <w>vive</w>
+                  <w>tornavi</w>
+                  <w>alla</w>
+                  <w>tua</w>
+                  <w>villetta</w>
+                  <pc>.</pc>
+                  <pc>.</pc>
+                  <w>Ti</w>
+                  <w>vedevo</w>
+                  <w>pettinarti</w>
+                  <pc>.</pc>
+               </l>
+               <seg corresp="#lg12" ana="a_1">
+                  <l>
+                     <w>Le</w>
+                     <w>siepi</w>
+                     <w>erano</w>
+                     <w>in</w>
+                     <w>fiore</w>
+                     <w>e</w>
+                     <w>il</w>
+                     <w>Tevere</w>
+                  </l>
+               </seg>
+               <l>
+                  <seg corresp="#lg12" ana="a_2">
+                     <w>mormorava</w>
+                     <pc>.</pc>
+                  </seg>
+                  <del change="#s1" rend="crossed out">
+                     <w><gap reason="illegible" quantity="3" unit="letter"/></w><!-- ici on ne peut pas dire que ce qui est effacé correspond à un nombre de syllabes longues ou brèves car les vers sont libres -->
+                     <w><unclear>un'</unclear></w>
+                  </del>
+                  <w>occhiata</w>
+                  <pc>,</pc>
+                  <w>sola</w>
+               </l>
+               <l>
+                  <w>bastò</w>
+                  <pc>,</pc>
+               </l>
+               <l>
+                  <w>Quante</w>
+                  <w>volte</w>
+                  <w>ti</w>
+                  <w>chiamai</w>
+                  <metamark function="space">.....</metamark>
+               </l>
+               <l>
+                  <w>Quante</w>
+                  <w>volte</w>
+                  <w>dissi</w>
+                  <pc>:</pc>
+                  <seg xml:lang="la">
+                     <w>tecum</w>
+                     <w>obeam</w>
+                     <w>libens</w>
+                     <metamark function="space">....</metamark>
+                  </seg>
+               </l>
+               <l>
+                  <w>E</w>
+                  <w>ti</w>
+                  <w>donnai</w>
+                  <w>l'</w>
+                  <w corresp="#w87" ana="a">ametista</w>
+               </l>
+               <l>
+                  <metamark function="space">.....</metamark>
+                  <w>e</w>
+                  <w>l'</w>
+                  <w>anello</w><!-- à relier aux br suivants -->
+                  <w>col</w>
+                  <w>mio</w>
+                  <w>nome</w>
+                  <pc>.</pc>
+               </l>
+               <seg corresp="#lg13" ana="a">
+                  <l>
+                     <w>Ma</w>
+                     <w>tu</w>
+                     <w>non</w>
+                     <w>endossasti</w>
+                     <w>il</w>
+                     <w xml:lang="la">flammeum</w><!-- relier aux br suivants -->
+                  </l>
+               </seg>
+               <seg corresp="#lg5" ana="a">
+                  <l>
+                     <w>Descrizione</w>
+                     <w>nuziale</w>
+                     <pc>...</pc>
+                  </l>
+                  <metamark function="structure">...........</metamark>
+               </seg>
+               <l>
+                  <w>Che</w>
+                  <w>fu</w>
+                  <pc>?</pc>
+                  <w>Ora</w>
+                  <w>mi</w>
+                  <w>ricordo</w>
+                  <pc>:</pc>
+               </l>
+               <seg corresp="#lg8 #lg9 #lg10 #lg11 #lg12 #lg14" ana="a">
+                  <l>
+                     <w>invece</w>
+                     <w>ti</w>
+                     <w>portarono</w>
+                  </l>
+                  <l>
+                     <pc>(</pc>
+                     <w>descrizione</w>
+                     <w>del</w>
+                     <w>funerale</w>
+                     <pc>)</pc>
+                  </l>
+               </seg>
+               <l>
+                  <w>
+                     <mod type="subst"  ana="adapt" cause="precision" instant="true" change="#s1">
+                        <del rend="overstrike">Era</del>
+                        <add rend="overwritten">Fu</add>
+                     </mod>
+                  </w>
+                  <w>un</w>
+                  <w>giorno</w>
+                  <w>ben</w>
+                  <w>triste</w>
+                  <pc>:</pc>
+                  <w>e</w>
+                  <w>il</w>
+                  <w>resto</w>
+               </l>
+               <l>
+                  <w>ho</w>
+                  <w>dimenticato</w>
+                  <pc>.</pc>
+                  <w>Ma</w>
+                  <w>ricordo</w>
+               </l>
+               <l>
+                  <w>ricordo</w>
+                  <w>d'</w>
+                  <w>aver</w>
+                  <w>molto</w>
+                  <w>pianto</w>
+               </l>
+               <seg corresp="#lg16" ana="a">
+                  <l>
+                     <w>e</w>
+                     <w>d'</w>
+                     <w>aver</w>
+                     <w>sentito</w>
+                     <w>la</w>
+                     <w corresp="#w263" ana="a">voce</w>
+                     <w>di</w>
+                     <w>tua</w>
+                  </l>
+                  <l>
+                     <w corresp="#w262" ana="a">madre</w>
+                     <pc>,</pc>
+                     <w>che</w>
+                     <w>mi</w>
+                     <w>diceva</w>
+                     <metamark function="space">...</metamark>
+                  </l>
+                  <l>
+                     <w>Si</w>
+                     <metamark function="space">......</metamark>
+                  </l>
+                  <l>
+                     <w>la</w>
+                     <w>rivedrai</w>
+                     <pc>,</pc>
+                     <w corresp="#w264" ana="a">Philet <mod type="subst"  change="#s1" ana="adapt"
+                           cause="language" instant="true">
+                           <del rend="overstrike"><seg xml:lang="it">o</seg></del>
+                           <add rend="overwritten"><seg xml:lang="lat">e</seg></add>
+                        </mod>
+                     </w>
+                  </l>
+               </seg>
+            </p>
+         </div>
+
+         <cb/>
+
+
+         <div rend="rightColumn" xml:lang="it" change="#s2">
+            <!-- poème italien ? traduction ? visblement pas publié  -->
+            <head>
+               <w>Epítha<hi rend="underline as title mark">l</hi>amion</w>
+            </head>
+            <lg met="freeVerses">
+               <l>
+                  <w>Ergete</w>
+                  <pc>,</pc>
+                  <w>o</w>
+                  <w>maestri</w>
+                  <pc>,</pc>
+                  <w>una</w>
+                  <w>bella</w>
+                  <w>casa</w>
+                  <pc>.</pc>
+               </l>
+               <l>
+                  <w>vi</w>
+                  <w>sia</w>
+                  <w>il</w>
+                  <w>bosco</w>
+               </l>
+               <l>
+                  <w>siano</w>
+                  <w>una</w>
+                  <w>fontana</w>
+                  <w>rumoreggiante</w>
+               </l>
+               <l>
+                  <w>per</w>
+                  <w>coprire</w>
+                  <w>il</w>
+                  <w>rumore</w>
+                  <w><unclear>lud*</unclear></w>
+                  <pc>:</pc>
+               </l>
+               <l>
+                  <w>vi</w>
+                  <w>vengano</w>
+                  <w>la</w>
+                  <w>rondine</w>
+                  <w>dal</w>
+                  <w>pettino</w>
+                  <w>bianco</w>
+               </l>
+               <l>
+                  <w>Ronzino</w>
+                  <w>le</w>
+                  <w>api</w>
+                  <pc>;</pc>
+                  <w>per</w>
+                  <w><unclear>*</unclear>nugnino</w>
+               </l>
+            </lg>
+         </div>
+
+
+
+         <div rend="rightColumn" change="#s6">
+            <p>7.0/ 30</p>
+            <p> 100 23.33</p>
+            <p>99</p>
+
+            <p>0.2333*4</p>
+            <p><hi rend="underline">0.9332</hi></p>
+            <p>0.93</p>
+         </div>
+
+         <div xml:lang="la" change="#s4" rend="rightColumn">
+            <lg met="sapphicStanza" corresp="#lg16" ana="b">
+               <l corresp="#ln61" ana="a" met="sapphicHendecasyllable">
+                  <w corresp="#w248" ana="a">tum</w>
+                  <w corresp="#w249" ana="a">rapi</w>
+                  <w corresp="#w250" ana="a">sensim</w>
+                  <w corresp="#w251" ana="a">videor</w>
+                  <w corresp="#w252" ana="a">silentisque</w>
+               </l>
+               <l corresp="#ln62" ana="a" met="sapphicHendecasyllable">
+                  <w corresp="#w253" ana="a">inmemor</w>
+                  <w corresp="#w254" ana="a">cordis</w>
+                  <w corresp="#w255 #w256" ana="a">vacuusque</w><!-- correspondance métrique -->
+                  <w corresp="#w257">
+                     <mod type="subst" ana="reformulate" cause="precision" instant="true" change="#s4">
+                        <del rend="crossed out">vitae</del>
+                        <add place="next">mentis</add>
+                     </mod>
+                  </w>
+               </l>
+               <l corresp="#ln63" ana="a" met="sapphicHendecasyllable">
+                  <w corresp="#w258" ana="a">iam</w>
+                  <w corresp="#w259" ana="a">tuae</w>
+                  <w corresp="#w260" ana="a">frustra</w>
+                  <w corresp="#w261" ana="a">revocante</w>
+                  <w corresp="#w262" ana="b">matris</w>
+               </l>
+               <l corresp="#ln64" ana="a" met="sapphicHendecasyllable">
+                  <w corresp="#w263" ana="b">voce</w>
+                  <w corresp="#w264" ana="b">Philetum</w>
+               </l>
+            </lg>
+         </div>
+
+         <div rend="rotate-90" change="#s3" xml:lang="la">
+            <lg>
+               <l>
+                  <w corresp="#w1" ana="a">Creparei<hi
+                        rend="underline end of word">a</hi></w>
+               </l>
+               <!-- variante : ressemblance avec le verbe crepare ? crepitus, répétition d'un bruit, d'eau -->
+               <l>
+                  <w corresp="#w1" ana="a">Crepareia</w>
+               </l>
+               <l>
+                  <w corresp="#w1" ana="a">Crepareia</w>
+               </l>
+               <l>
+                  <w corresp="#w1" ana="a">Crepareia</w>
+               </l>
+               <l>
+                  <w corresp="#w1" ana="a">Crepa</w>
+               </l>
+               <l>
+                  <w corresp="#w1" ana="a">C<mod type="subst"  ana="rewrite" cause="fix" instant="true">
+                        <del>reparei</del>
+                        <add>repareia</add>
+                     </mod>
+                  </w>
+               </l>
+               <l>
+                  <w corresp="#w2" ana="a">TRYPHENA</w>
+               </l>
+            </lg>
+         </div>
+
+
+      </body>
+   </text>
+
+</TEI>

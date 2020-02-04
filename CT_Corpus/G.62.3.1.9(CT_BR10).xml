@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Draft n°10</title>
+                <author>Giovanni Pascoli</author>
+                <editor>Sarah Orsini</editor>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier xml:id="CT_BR10">
+                        <country>Italy</country>
+                        <settlement>Castelvecchio Pascoli</settlement>
+                        <repository>Archivio Casa Pascoli</repository>
+                        <idno>G.62.3.1.9</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <extent>
+                                    <height/>
+                                    <width/>
+                                </extent>
+                                <!-- dimension -->
+                                <foliation>3 pages</foliation>
+                                <!-- nombre de pages -->
+                                <condition/>
+                                <!-- état du manuscrit, déchirures etc -->
+                            </supportDesc>
+                            <!-- description des matériaux et marque -->
+                            <layoutDesc>
+                                <layout columns="1"/>
+                                <!-- existe aussi l'@writtenLines pr nb de lignes-->
+                            </layoutDesc>
+                            <!-- description de la mise en page -->
+                        </objectDesc>
+                        <!-- le codex lui-même -->
+                        <handDesc>
+                           <p></p>
+                        </handDesc>
+                        <bindingDesc>
+                            <p/>
+                        </bindingDesc>
+                        <!-- quel type de reliure ? cahier ou feuilles -->
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <listChange ordered="true">
+                    
+                        <change xml:id="s1a">Maria copies the three first stanzas of the poem. </change>
+                        <change xml:id="s1b">She corrects the capitals she began each line with.</change>
+                        <change xml:id="s1c">She goes on with copying the rest of the poem.</change>
+                        <change xml:id="s1d">She corrects some errors (mostly ponctuation and orthograph) after rereading.</change>
+                   
+                    <change xml:id="s2">Pascoli corrects the copy and adds some words</change>
+                    <change xml:id="s3">Classification elements. By Pascoli, using blue pencil.</change>
+                    <change xml:id="s4">Classification elements (posthumous). By Maria Pascoli, using grey pencil.</change>
+                    <change xml:id="s5">Classification elements. By the Archive, using grey pencil.</change>
+                </listChange>
+            </creation>
+            <langUsage>
+                <language ident="it">italian</language>
+                <language ident="la">latin</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+
+    <text>
+    
+          
+        
+        <body resp="#MariaPascoli" xml:lang="la">
+            
+            <div rend="text-align:left;">
+                <metamark resp="#Archive" place="leftCorner" function="classification" rend="pencil"
+                change="#s5">LXII-3-1.9</metamark>
+            </div>
+            <div rend="text-align:right;"><metamark resp="#Pascoli" place="rightCorner" function="classification"
+                rend="bluePencil" change="#s3">1</metamark>
+                
+                <metamark resp="#MariaPascoli" place="rightCorner" function="classification"
+                rend="pencil" change="#s4">9</metamark>
+            </div>
+            
+            <lb/>
+            <lb/>
+            
+           <div rend="text-align:center;"> 
+               <head corresp="#ln0" ana="a" change="#s1a">
+                <w corresp="#w1" ana="a">CREPEREIA</w>
+                <w corresp="#w2" ana="a">TRYPHAENA</w>
+            </head>
+           </div>
+           
+            <lb/>
+            <div>
+            <lg met="sapphicStanza" corresp="#lg1" ana="a" change="#s1a">
+                <l met="sapphicHendecasyllable" corresp="#ln1">
+                    <w corresp="#w3" ana="a">In</w>
+                    <w corresp="#w4" ana="a">nigros</w>
+                    <w corresp="#w5" ana="a">circum</w>
+                    <w corresp="#w" ana="a">taciturna</w>
+                    <w corresp="#w7" ana="a">lucos</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln2" ana="a">
+                    <w corresp="#w8">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">F</seg></del>
+                            <add rend="overwritten">f</add>
+                        </mod>
+                        ugerat</w>
+                    <w corresp="#w9" ana="a">cornix</w>
+                    <pc>,</pc>
+                    <w corresp="#w10" ana="a">repetebat</w>
+                    <w corresp="#w11" ana="a">urbis</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln3" ana="a">
+                    <w corresp="#w12" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">T</seg></del>
+                            <add rend="overwritten">t</add>
+                        </mod>
+                        urba</w>
+                    <w corresp="#w13" ana="a">coruorum</w>
+                    <w corresp="#w14" ana="a">memorum</w>
+                    <w corresp="#w15" ana="a">quadratae</w>
+                </l>
+                <l corresp="#ln4" ana="a" met="adonic">
+                    <w corresp="#w16" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                         <del rend="erased"><seg change="#s1a">S</seg></del>
+                         <add rend="overwritten">s</add>
+                        </mod>
+                        axa</w>
+                    <w corresp="#w17" ana="a">Palati</w>
+                    <pc>,</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg2" ana="a" change="#s1a">
+                <l met="sapphicHendecasyllable" corresp="#ln5" ana="a">
+                    <w corresp="#w18" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">C</seg></del>
+                            <add rend="overwritten">c</add>
+                        </mod>
+                        um</w>
+                    <w corresp="#w19" ana="a">solum</w>
+                    <w corresp="#w20" ana="a">Tuscum</w>
+                    <w corresp="#w21" ana="a">decimo</w>
+                    <w corresp="#w22">die</w>
+                    <w corresp="#w23">te</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln6" ana="a">
+                    <w corresp="#w24" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">Re</seg></del>
+                            <add rend="overwritten">re</add>
+                        </mod>
+                        dditit</w>
+                    <w corresp="#w25" ana="a">maio</w>
+                    <pc>,</pc>
+                    <w corresp="#w26" ana="a">Crepereia</w>
+                    <pc>,</pc>
+                    <w corresp="#w27">soli</w>
+                    <pc>,</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln7" ana="a">
+                    <w corresp="#w28" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">P</seg></del>
+                            <add rend="overwritten">p</add>
+                        </mod>
+                        ronubam</w>
+                    <w corresp="#w29" ana="a">post</w>
+                    <w corresp="w30" ana="a">innumera</w>
+                    <w corresp="w31" ana="a">induentem</w>
+                </l>
+                <l corresp="#ln8" ana="a" met="adonic">
+                    <w corresp="#w32" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">S</seg></del>
+                            <add rend="overwritten">s</add>
+                        </mod>
+                        aecula</w>
+                    <w corresp="#w33" ana="a">gemmam</w>
+                    <pc>.</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg3" ana="a" change="#s1a">                
+                <l met="sapphicHendecasyllable" corresp="#ln9" ana="a">
+                    <w corresp="#w34" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">V</seg></del>
+                            <add rend="overwritten">u</add>
+                        </mod>
+                        itrea</w>
+                   <mod type="subst"  hand="#Pascoli" change="#s2" ana="reformulate" cause="allusion"><!-- hésitait avec Naïs -->
+                       <del rend="completed"><seg change="#s1a" hand="#MariaPascoli"><space extent="ls" ></space></seg></del>
+                       <add rend="overwritten"><w corresp="#w35" ana="a">uirgo</w></add>
+                    </mod>
+                    <w corresp="#w36" ana="a">sub</w>
+                    <w corresp="#w37" ana="a">aqua</w>
+                    <w corresp="#w38" ana="a">latebas</w>
+                    <pc>,</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln10" ana="a">
+                    <w corresp="#w39" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">A</seg></del>
+                            <add rend="overwritten">a</add>
+                        </mod>
+                        t</w>
+                    <w corresp="#w40" ana="a">comans</w>
+                    <w corresp="#w41" ana="a">summis</w>
+                    <w corresp="#w42" ana="a">adiantus</w>
+                    <w corresp="#w43" ana="a">undis</w>
+                </l>
+                <l met="sapphicHendecasyllable" ana="a" corresp="#ln11">
+                    <w corresp="#w44" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">N</seg></del>
+                            <add rend="overwritten">n</add>
+                        </mod>
+                        abat</w>
+                    <pc>.</pc>
+                    <w corresp="#w45" ana="a">an</w>
+                    <w corresp="#w46" ana="a">nocti</w>
+                    <w corresp="#w47" ana="a">dederas</w>
+                    <w corresp="#w48" ana="a">opacae</w>
+                </l>
+                <l corresp="#ln12" ana="a" met="adonic">
+                    <w corresp="#w49" ana="a">
+                        <mod type="subst"  change="#s1b" ana="correct" cause="typography">
+                            <del rend="erased"><seg change="#s1a">S</seg></del>
+                            <add rend="overwritten">s</add>
+                        </mod>
+                        pargere</w>
+                    <w corresp="#w50" ana="a">crines</w>
+                    <pc>?</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg4" ana="a" change="#s1c">                
+                <l met="sapphicHendecasyllable" corresp="#ln13" ana="a">
+                    <w corresp="#w51" ana="a">sed</w>
+                    <w corresp="#w52" ana="a">quid</w>
+                    <mod type="subst"  hand="#Pascoli" change="#s2" ana="confirm" cause="doubt"><!-- type ? cause ? -->
+                        <del rend="completed"><seg change="#s1c" hand="#MariaPascoli"><space extent="lsl"></space></seg></del>
+                        <add rend="overwritten"><w corresp="#w53" ana="a">antiquis</w></add>
+                    </mod>
+                    <w corresp="#w54" ana="a">oculi</w>
+                    <w corresp="#w55" ana="a">uidenti</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln14" ana="a">
+                    <w corresp="#w56" ana="a">nunc</w>
+                    <w corresp="#w57" ana="a">mihi</w>
+                    <mod type="subst"  hand="#Pascoli" change="#s2" ana="confirm" cause="doubt">
+                        <del rend="completed"><seg change="#s1c" hand="#MariaPascoli"><space extent="xls"></space></seg></del>
+                        <add rend="overwritten"><w corresp="#w58" ana="a">effeti</w></add>
+                    </mod>
+                    <w corresp="#w59" ana="a">lacrimis</w>
+                    <w corresp="#w60" ana="a">madescunt</w>
+                    <pc>?</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln15" ana="a">
+                    <w corresp="#w61" ana="a">quas</w>
+                    <w corresp="#w62" ana="a">premo</w>
+                    <w corresp="#w63" ana="a">curas</w>
+                    <w corresp="#w64" ana="a">alioque</w>
+                    <w corresp="#w65" ana="a">eumdem</w>
+                </l>
+                <l corresp="#ln16" met="adonic" ana="a">
+                    <w corresp="#w66" ana="a">corde</w>
+                    <w corresp="#w67" ana="a">dolorem</w>
+                    <pc>?</pc>
+                </l>
+            </lg>  
+            <lg met="sapphicStanza" corresp="#lg5" change="#s1c">                
+                <l met="sapphicHendecasyllable" corresp="#ln17" ana="a">
+                    <w corresp="#w68" ana="a">murteum</w>
+                    <w corresp="#w69" ana="a">uidi</w>
+                    <w corresp="#w70" ana="a">memor</w>
+                    <w corresp="#w71" ana="a">ipse</w>
+                    <w corresp="#w72" ana="a">sertum</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln18" ana="a">
+                    <w corresp="#w73" ana="a">quosque</w>
+                    <w corresp="#w74" ana="a">fulsisti</w>
+                    <w corresp="#w75" ana="a">religata</w>
+                    <w corresp="#w76" ana="a">crines</w>
+                    <pc>,</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln19" ana="a">
+                    <w corresp="#w77" ana="a">
+                        <mod type="subst"  hand="#Pascoli" change="#s2" ana="adapt" cause="precision">
+                            <del rend="overstrike"><seg hand="#MariaPascoli" change="#s1c">a</seg></del>
+                            <add rend="overwritten">e</add>
+                        </mod> 
+                        t</w>
+                    <w corresp="#w78" ana="a">manus</w>
+                    <mod type="subst"  change="#s2" hand="#Pascoli" ana="addnew" cause="gap">
+                        <del rend="completed"><seg change="#s1c" hand="#MariaPascoli"><space extent="xl"></space></seg></del>
+                        <add rend="overwritten"><w corresp="#w79" ana="a">junctas</w></add>
+                    </mod>
+                    <w corresp="#w80" ana="a">tenu
+                        <mod type="subst"  hand="#Pascoli" change="#s2" ana="correct" cause="orthograph">
+                            <del rend="overstrike"><seg change="#s1c" hand="#MariaPascoli">i</seg></del>
+                            <add rend="overwritten">e</add>
+                        </mod>
+                        sque</w>
+                    <w corresp="#w81" ana="a">dextris</w>
+                </l>
+                <l corresp="#ln20" met="adonic" ana="a">
+                    <w corresp="#w82" ana="a">farris</w>
+                    <w corresp="#w83" ana="a">aristas</w>
+                    <pc>.</pc>
+                </l>
+            </lg>           
+            <lg met="sapphicStanza" corresp="#lg6" ana="a" change="#s1c">               
+                <l met="sapphicHendecasyllable" corresp="#ln21" ana="a">
+                    <w corresp="#w84" ana="a">nota</w>
+                    <pc>,</pc>
+                    <w corresp="#w85" ana="a">post</w>
+                    <w corresp="#w86" ana="a">longos</w>
+                    <w corresp="#w87" ana="a">amethystos</w>
+                    <w corresp="#w88" ana="a">annos</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln22" ana="a">
+                    <w corresp="#w89" ana="a">quae</w>
+                    <w corresp="#w90" ana="a">refert</w>
+                    <w corresp="#w91" ana="a">alas</w>
+                    <w corresp="#w92" ana="a">oculis</w>
+                    <w corresp="#w93" ana="a">ruentis</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln23" ana="a">
+                    <w corresp="#w94" ana="a">gryphis</w>
+                    <w corresp="#w95" ana="a">et</w>
+                    <w corresp="#w96" ana="a">ceruam</w>
+                    <pc>,</pc>
+                    <w corresp="#w97" ana="a">Venerique</w>
+                    <w corresp="#w98" ana="a">pupa</w>
+                </l>
+                <l corresp="#ln24" ana="a" met="adonic">
+                    <w corresp="#w99" ana="a">nota</w>
+                    <w corresp="#w100" ana="a">negata</w>
+                    <w corresp="#w101" ana="a">est</w>
+                    <pc>.</pc>
+                </l>
+            </lg>              
+            <lg met="sapphicStanza" corresp="#lg7" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln25" ana="a">
+                    <w corresp="#w102" ana="a">crastina</w>
+                    <pc>,</pc>
+                    <w corresp="#w103" ana="a">sacris</w>
+                    <w corresp="#w104" ana="a">Lemurum</w>
+                    <w corresp="#w105" ana="a">tenebris</w>
+                    <pc>,</pc>
+                 </l>
+                <l met="sapphicHendecasyllable" corresp="#ln26" ana="a">
+                    <w corresp="#w106" ana="a">nocte</w>
+                    <w corresp="#w107" ana="a">cum</w>
+                    <w corresp="#w108" ana="a">pict
+                        <mod type="subst"  instant="true" change="#s1c" ana="correct" cause="orthograph">
+                            <del rend="overstrike">e</del>
+                            <add rend="overwritten">ae</add>
+                        </mod>
+                    </w>
+                    <w corresp="#w109" ana="a">uolucres</w>
+                    <w corresp="#w110" ana="a">tacebunt</w>
+                 </l>
+                <l met="sapphicHendecasyllable" corresp="#ln27" ana="a">
+                    <w corresp="#w111" ana="a">et</w>
+                    <w corresp="#w112" ana="a">canes</w>
+                    <pc>,</pc>
+                    <w corresp="#w113" ana="a">nudo</w>
+                    <w corresp="#w114" ana="a">pede</w>
+                    <w corresp="#w115" ana="a">per</w>
+                    <w corresp="#w116" ana="a">soporam</w>
+                 </l>
+                <l corresp="#ln28" ana="a" met="adonic">
+                    <w corresp="#w117" ana="a">deferar</w>
+                    <w corresp="#w118" ana="a">umbram</w>
+                    <pc>,</pc>
+                 </l>
+             </lg>
+            <lg met="sapphicStanza" corresp="#lg8" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln29" ana="a">
+                    <w corresp="#w119" ana="a">et</w>
+                    <w corresp="#w120" ana="a">fabas</w>
+                    <w corresp="#w121" ana="a">sumam</w>
+                    <w corresp="#w122" ana="a">iaciamque</w>
+                    <w corresp="#w123" ana="a">nigras</w>
+                </l>
+          
+                <pb/>  
+                <lb/>
+                <!-- PROBLEME PLACE DANS DOCUMENT à cause de changement page -->
+                <metamark resp="#Archive" place="leftCorner" function="classification" rend="pencil"
+                    change="#s5">LXII-3-1.10</metamark>
+                 <metamark resp="#Pascoli" place="rightCorner" function="classification"
+                    rend="bluePencil" change="#s3">2</metamark>
+                <metamark resp="#MariaPascoli" place="rightCorner" function="classification"
+                    rend="pencil" change="#s4">10</metamark>
+              <lb/>
+              
+                
+                <l met="sapphicHendecasyllable" corresp="#ln30" ana="a">
+                    <w corresp="#w124" ana="a">pone</w>
+                    <w corresp="#w125" ana="a">per</w>
+                    <w corresp="#w126" ana="a">noctem</w>
+                    <w corresp="#w127" ana="a">nouiesque</w>
+                    <w corresp="#w128" ana="a">dicam</w>
+                    <mod ana="correct" cause="typography"><del change="#s1c" instant="true" rend="overstrike"><pc>:</pc></del></mod>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln31" ana="a">
+                    <pc>&#x2018;</pc>
+                    <w corresp="#w129" ana="a">His</w>
+                    <w corresp="#w130" ana="a">fabis</w>
+                    <pc>,</pc>
+                    <w corresp="#w131" ana="a">manes</w>
+                    <pc>,</pc>
+                    <w corresp="#w132" ana="a">redimo</w>
+                    <pc>,</pc>
+                    <w corresp="#w133" ana="a">Tryphaenae</w>
+                    <pc>,</pc>
+                </l>
+                <l met="adonic" corresp="#ln32" ana="a">
+                    <w corresp="#w134" ana="a">meque</w>
+                    <w corresp="#w135" ana="a">meosque</w>
+                    <pc>.</pc>
+                    <pc>&#x2019;</pc>
+                 </l>
+             </lg>          
+            <lg met="sapphicStanza" corresp="#lg9" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln33" ana="a">
+                    <w corresp="#w136" ana="a">dumque</w>
+                    <w corresp="#w137" ana="a">tu</w>
+                    <w corresp="#w138" ana="a">aversum</w><!-- là elle a oublié de remplacer u par v-->
+                    <w corresp="#w139" ana="a">sequeris</w>
+                    <w corresp="#w140" ana="a">manuque</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln34" ana="a">
+                    <w corresp="#w141" ana="a">tangis</w>
+                    <w corresp="#w142" ana="a">exsangui</w>
+                    <w corresp="#w143" ana="a">leuis</w>
+                    <w corresp="#w144" ana="a">umbra</w>
+                    <w corresp="#w145" ana="a">dona</w>
+                    <pc>,</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln35" ana="a">
+                    <w corresp="#w146" ana="a">tinnulo</w>
+                    <w corresp="#w147" ana="a">parcam</w>
+                    <w corresp="#w148" ana="a">moriturus</w>
+                    <w corresp="#w149" ana="a">aeri</w>
+                </l>
+                <l corresp="#ln36" ana="a" met="adonic">
+                    <w corresp="#w150" ana="a">respiciamque</w>
+                    <pc>.</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg10" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln37" ana="a">
+                    <w corresp="#w151" ana="a">en</w>
+                    <w corresp="#w152" ana="a">ades</w>
+                    <pc>.</pc>
+                    <w corresp="#w153" ana="a">sic</w>
+                    <w corresp="#w154" ana="a">lectus</w>
+                    <w corresp="#w155" ana="a">eburnus</w>
+                    <w corresp="#w156" ana="a">olim</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln38" ana="a">
+                    <w corresp="#w157" ana="a">pallidam</w>
+                    <pc>,</pc>
+                    <w corresp="#w158" ana="a">me</w>
+                    <w corresp="#w159" ana="a">flente</w>
+                    <pc>,</pc>
+                    <w corresp="#w160" ana="a">nefas</w>
+                    <pc>,</pc>
+                    <w corresp="#w161" ana="a">habebat</w>
+                    <pc>.</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln39" ana="a">
+                    <w corresp="#w162" ana="a">sic</w>
+                    <w corresp="#w163" ana="a">eras</w>
+                    <pc>,</pc>
+                    <w corresp="#w164" ana="a">collo</w>
+                    <w corresp="#w165" ana="a">nitidum</w>
+                    <w corresp="#w166" ana="a">reflexo</w>
+                </l>
+                <l corresp="#ln40" ana="a" met="adonic">
+                    <w corresp="#w167" ana="a">fusa</w>
+                    <w corresp="#w168" ana="a">capillum</w>
+                    <pc>.</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg11" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln41" ana="a">
+                    <w corresp="#w169" ana="a">flamen</w>
+                    <w corresp="#w170" ana="a">oblitas</w>
+                    <w corresp="#w171" ana="a">grave</w>
+                    <w corresp="#w172" ana="a">tibiarum</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln42" ana="a">
+                    <w corresp="#w173" ana="a">nunc</w>
+                    <w corresp="#w174" ana="a">procul</w>
+                    <w corresp="#w175" ana="a">flenti</w>
+                    <w corresp="#w176" ana="a">mihi</w>
+                    <w corresp="#w177" ana="a">pellit</w>
+                    <w corresp="#w178" ana="a">auris</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln43" ana="a">
+                    <w corresp="#w179" ana="a">neniaeque</w>
+                    <w corresp="#w180" ana="a">urguent</w>
+                    <w corresp="#w181" ana="a">resonoque</w>
+                    <w corresp="#w182" ana="a">maesta</w>
+                </l>
+                <l corresp="#ln44" met="adonic" ana="a">
+                    <w corresp="#w183" ana="a">praefica</w>
+                    <w corresp="#w184" ana="a">lesso</w>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg12" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln45" ana="a">
+                    <w corresp="#w185" ana="a">ducitur</w>
+                    <w corresp="#w186" ana="a">funus</w><!-- reprise d'encre sur le u -->
+                    <w corresp="#w187" ana="a">per</w>
+                    <w corresp="#w188" ana="a">aprica</w>
+                    <w corresp="#w189" ana="a">ripae</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln46" ana="a">
+                    <w corresp="#w190" ana="a">murmur</w>
+                    <w corresp="#w191" ana="a">etrusco</w>
+                    <w corresp="#w192" ana="a">Tiberi</w>
+                    <w corresp="#w193" ana="a">ciente</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln47" ana="a">
+                    <w corresp="#w194" ana="a">triste</w>
+                    <pc>,</pc>
+                    <w corresp="#w195" ana="a">per</w>
+                    <w corresp="#w196" ana="a">sepes</w>
+                    <w corresp="#w197" ana="a">ubi</w>
+                    <w corresp="#w198" ana="a">gignit</w>
+                    <w corresp="#w199" ana="a">albos</w>
+                </l>
+                <l corresp="#ln48" ana="a" met="adonic">
+                    <w corresp="#w200" ana="a">spina</w>
+                    <w corresp="#w201" ana="a">corymbos</w>
+                    <pc>.</pc>
+                </l>
+            </lg>   
+            <lg met="sapphicStanza" corresp="#lg13" ana="a" change="#s1c">                
+                <l met="sapphicHendecasyllable" ana="a" corresp="#ln49">
+                    <w corresp="#w202" ana="a">floridam</w>
+                    <w corresp="#w203" ana="a">non</w>
+                    <w corresp="#w204" ana="a">te</w>
+                    <w corresp="#w205" ana="a">ruber</w>
+                    <w corresp="#w206" ana="a">igne</w>
+                    <w corresp="#w207" ana="a">Vesper</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln50" ana="a">
+                    <w corresp="#w208" ana="a">matris</w>
+                    <w corresp="#w209" ana="a">abduxit</w>
+                    <w corresp="#w210" ana="a">gremio</w>
+                    <w corresp="#w211" ana="a">morantem</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln51" ana="a">
+                    <w corresp="#w212" ana="a">nec</w>
+                    <w corresp="#w213" ana="a">faces</w>
+                    <w corresp="#w214" ana="a">Hymen</w>
+                    <w corresp="#w215" ana="a">pueri</w>
+                    <w corresp="#w216" ana="a">leuantes</w>
+                </l>
+                <l corresp="#ln52" ana="a" met="adonic">
+                    <w corresp="#w217" ana="a">concinuerunt</w>
+                    <pc>.</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg14" ana="a" change="#s1c">                    
+                <l met="sapphicHendecasyllable" corresp="#ln53" ana="a">
+                    <w corresp="#w218" ana="a">cymbiis</w>
+                    <w corresp="#w219" ana="a">fusis</w>
+                    <w corresp="#w220" ana="a">ego</w>
+                    <w corresp="#w221" ana="a">rite<mod ana="correct" cause="orthograph"><del change="#s1c" instant="true" rend="overstrike">i</del></mod></w>
+                    <w corresp="#w222" ana="a">lactis</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln54" ana="a">
+                    <w corresp="#w223" ana="a">condidi</w>
+                    <w corresp="#w224" ana="a">mutis</w>
+                    <w corresp="#w225" ana="a">animam</w>
+                    <w corresp="#w226" ana="a">sepulcris</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln55" ana="a">
+                    <w corresp="#w227" ana="a">edidique</w>
+                    <w corresp="#w228" ana="a">amens</w>
+                    <pc>&#x2018;</pc>
+                    <w corresp="#w229" ana="a">Haue</w>
+                    <w corresp="#w230" ana="a">haue</w>
+                    <pc>&#x2019;</pc>
+                    <w corresp="#w231" ana="a">supremum</w>
+                </l>
+                <l corresp="#ln56" ana="a" met="adonic">
+                    <w corresp="#w232" ana="a">ipse</w>
+                    <pc>,</pc>
+                    <pc>&#x2018;</pc>
+                    <w corresp="#w233" ana="a">Tryphaena</w>
+                    <pc>&#x2019;</pc>
+                    <pc>.</pc>
+                </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg15" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln57" ana="a">
+                    <w corresp="#w234" ana="a">Vesper</w>
+                    <w corresp="#w235" ana="a">adflauit</w>
+                    <w corresp="#w236" ana="a">pariis</w>
+                    <w corresp="#w237" ana="a">columnis</w>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln58" ana="a">
+                    <w corresp="#w238" ana="a">luteum</w>
+                    <w corresp="#w239" ana="a">molis</w>
+                    <w corresp="#w240" ana="a">iubar</w>
+                    <w corresp="#w241" ana="a">Hadrianae</w>
+                    <pc>,</pc>
+                </l>
+                <l met="sapphicHendecasyllable" corresp="#ln59" ana="a">
+                    <w corresp="#w242" ana="a">Pincium</w>
+                    <w corresp="#w243" ana="a">tranant</w>
+                    <w corresp="#w244" ana="a">fugiente</w>
+                    <w corresp="#w245" ana="a">cor
+                        <mod type="subst"  change="#s1d" ana="correct" cause="orthograph">
+                            <del rend="overstrike"><seg change="#s1c">vi</seg></del>
+                            <add rend="overwritten">ui</add>
+                        </mod>
+                    </w>
+                </l>
+                <l corresp="#ln60" ana="a" met="adonic">
+                    <w corresp="#w246" ana="a">agmine</w>
+                    <w corresp="#w247" ana="a">collem</w>
+                    <pc>,</pc>
+                </l>
+            </lg>
+            <pb/>
+                <lb/>
+            <metamark resp="#Archive" place="leftCorner" function="classification" rend="pencil"
+                change="#s5">LXII-3-1.11</metamark>
+            <metamark resp="#Pascoli" place="rightCorner" function="classification"
+                rend="bluePencil" change="#s3">3</metamark>
+            <metamark resp="#MariaPascoli" place="rightCorner" function="classification"
+                rend="pencil" change="#s4">11</metamark>
+               <lb/>
+               
+            
+            <lg met="sapphicStanza" corresp="#lg16" ana="a" change="#s1c">
+                <l met="sapphicHendecasyllable" corresp="#ln61" ana="a">
+                    <w corresp="#w248" ana="a">cum</w>
+                    <w corresp="#w249" ana="a">rapi</w>
+                    <w corresp="#w250" ana="a">sensim</w>
+                    <w corresp="#w251" ana="a"> 
+                        <mod type="subst"  change="#s1d" ana="correct" cause="orthograph">
+                            <del rend="overstrike">vi</del>
+                            <add rend="overwritten">ui</add>
+                        </mod>deor
+                    </w>
+                    <w corresp="#w252" ana="a">silentisque</w>
+               </l>
+                <l met="sapphicHendecasyllable" corresp="#ln62" ana="a">
+                    <w corresp="#w253" ana="a">inmemor</w>
+                    <w corresp="#w254" ana="a">cordis</w>
+                    <w corresp="#w255" ana="a">per</w>
+                    <w corresp="#w256" ana="a">inane</w>
+                    <w corresp="#w257" ana="a">ferri</w>
+                    <pc>,</pc>
+               </l>
+                <l met="sapphicHendecasyllable" corresp="#ln63" ana="a">
+                    <w corresp="#w258" ana="a">iam</w>
+                    <w corresp="#w259" ana="a">tuae</w>
+                    <w corresp="#w260" ana="a">frustra</w>
+                    <w corresp="#w261" ana="a">reuocante</w>
+                    <w corresp="#w262" ana="a">matris</w>
+               </l>
+                <l corresp="#ln64" ana="a" met="adonic">
+                    <w corresp="#w263" ana="a">uoce</w>
+                    <w corresp="#w264" ana="a">Philetum</w>
+                    <pc>.</pc>
+               </l>
+            </lg>
+                <lb/>
+                <lb/>
+                <lb/>
+                <lb/>
+                <lb/>
+                <lb/>
+           </div> 
+            <metamark function="classification" rend="pencil" resp="#Pascoli" change="#s3">25/21</metamark>
+        </body>
+    </text>
+</TEI>

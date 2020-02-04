@@ -1,0 +1,58 @@
+/*
+.s1
+{
+    color: black;
+}
+
+#s2
+{
+    color:white;
+}
+#s5 
+{
+    color:white;
+}
+#s3
+{
+    color: white;
+}
+#s4
+{
+    color: white;
+}
+#s6
+{
+    color: white;
+}
+#s7
+{
+    color: white;
+}
+#s8
+{
+    color: white;
+}
+body
+{
+    background: white;
+}*/
+.black
+{
+    color:black;
+}
+body
+{
+    background: white;
+    color: white;
+    
+}
+h1{
+    color:black;
+}
+h2{
+    color:black;
+}
+li
+{
+    color:black;
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+
+   <!-- je dois encore : relier les mots aux brouillons suivants  -->
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Draft n°1</title>
+            <author>Giovanni Pascoli</author>
+            <editor>Sarah Orsini</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+           <msDesc>
+            <msIdentifier xml:id="CT_BR1">
+               <country>Italy</country>
+               <settlement>Castelvecchio Pascoli</settlement>
+               <repository>Archivio Casa Pascoli</repository>
+               <idno>G.62.3.1.1</idno>
+             </msIdentifier>
+             <physDesc>
+                <objectDesc>
+                   <supportDesc>
+                      <extent>
+                         <height></height>
+                         <width></width>
+                      </extent> <!-- dimension -->
+                      <foliation></foliation><!-- nombre de pages -->
+                      <condition></condition> <!-- état du manuscrit, déchirures etc -->
+                   </supportDesc> <!-- description des matériaux et marque -->
+                   <layoutDesc>
+                      <layout columns="4"></layout> <!-- existe aussi l'@writtenLines pr nb de lignes-->
+                   </layoutDesc> <!-- description de la mise en page -->
+                </objectDesc> <!-- le codex lui-même -->
+                <handDesc>
+                  <p></p>
+                </handDesc>
+                <bindingDesc><p></p></bindingDesc><!-- quel type de reliure ? cahier ou feuilles -->
+              </physDesc>
+         </msDesc>
+        </sourceDesc>
+       </fileDesc>
+     <profileDesc> 
+        <creation>
+           <listChange ordered="true">
+              <change xml:id="s1">First stage, written by Pascoli using ink.</change>
+              <change xml:id="s2">Classification element, written by Maria Pascoli, using pencil.</change>
+              <change xml:id="s3">Classification element, written by the Archive, using pencil.</change>
+           </listChange>
+        </creation>
+        <langUsage>
+           <language ident="it">italian</language>
+           <language ident="la">latin</language>
+        </langUsage>
+     </profileDesc>
+      </teiHeader>
+   
+   <!-- facsimile avec url dans un élément à part. -->
+   <!--<facsimile>
+      <graphic url=""></graphic>
+   </facsimile>-->
+   <text>
+      <body resp="#Pascoli">
+        <div rend="text-align:right;"><!-- crayon -->
+           <metamark resp="#Archive" function="classification" change="#s3">LXII-3-1.1</metamark>
+           <lb/>
+           <metamark resp="#MariaPascoli" function="classification" change="#s2">4</metamark>
+        </div>
+         <div xml:lang="it" change="#s1">
+            <p>
+              <w corresp="#w94">Grifo</w>
+              <w corresp="#w95">e</w>
+              <w corresp="#w96">cerva</w>
+              <w>incisi</w>
+              <w>nella</w>
+              <w corresp="#w33">gemma</w>
+              <w>sono</w>
+               <lb/>
+              <w>Apollo</w>
+              <w>e</w>
+              <w>Diane</w>
+              <pc>-</pc>
+              <w>principio</w> 
+              <w>igneo</w>
+              <w>e</w>
+           <lb/>
+              <w>umido</w>
+              <pc>.</pc>
+           <lb/>   
+               <w>Collana</w>
+               <w>a</w>
+               <w>maglie</w>
+               <w>incatenate</w>
+               <w>a</w>
+            <lb/>
+               <w>rimpiego</w>
+               <w>terminato</w>  
+               <w>dall'</w>
+               <w>uncinetto</w>
+            <lb/>
+               <w>e</w>
+               <w>anello</w>
+               <w>di</w>
+               <w>chiusura</w>
+               <w>Vi</w>
+               <w>sono</w>
+               <w>appesi</w>
+            <lb/>
+               <w>trentacinque</w>
+               <w>vetri</w>
+               <w>verdi</w>            
+            <lb/>
+               <w corresp="#w98">Pupa</w>
+               <w>articolata</w>
+               <pc>-</pc>
+               <w>con</w>
+               <w>capelli</w>
+               <w>alla</w>
+            <lb/>
+               <w>Faustina</w>
+               <w>senior</w>
+               <w>in</w>
+               <unclear>*******</unclear>
+            <lb/>
+               <w>dura</w>
+               <w>e</w>
+               <w>petrificata</w>
+               <pc>.</pc>
+               <num>30</num>
+               <w><choice>
+                  <abbr resp="#Pascoli">centim</abbr>
+                  <expan resp="#HyperPascoli">centimetri</expan>
+                  </choice>
+               </w>
+            <lb/>
+               <w>Era</w>
+               <w>una</w>
+               <w>memoria</w>
+               <w>della</w>
+               <w>puerizia</w>
+               <w>della</w>
+               <w>defunta</w>
+               <pc>.</pc>
+            <lb/>
+               <w>Due</w>
+               <w>piccoli</w>
+               <w>pettini</w>
+               <w>di</w>
+               <w>buss<unclear>*</unclear></w>
+               <pc>:</pc>
+               <w>giocattoli</w>
+            <lb/>
+               <w>Frammento</w>
+               <w>rettangolare</w>
+               <w>di</w>
+               <w>legno</w>
+               <pc>,</pc>
+               <w>segato</w>
+               <w>a</w>
+               <w>foglio</w>
+            <lb/>
+               <w>Disco</w>
+               <w>in</w>
+               <w>lastra</w>
+               <w>d'</w>
+               <w>argento</w>
+            <lb/>
+               <w>Altro</w>
+               <w>più</w>
+               <w>grande</w>
+               <pc>,</pc>
+               <w>infranto</w>
+               <pc>.</pc>
+          </p> 
+        </div>         
+      </body>
+  </text>
+</TEI>

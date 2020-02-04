@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../ODD_schema_doc/ODD%20geneticTEI.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Draft n°3</title>
+            <author>Giovanni Pascoli</author>
+            <editor>Sarah Orsini</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier xml:id="CT_BR3">
+                  <country>Italy</country>
+                  <settlement>Castelvecchio Pascoli</settlement>
+                  <repository>Archivio Casa Pascoli</repository>
+                  <idno>G.62.3.1.3</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>
+                           <height/>
+                           <width/>
+                        </extent>
+                        <!-- dimension -->
+                        <foliation/>
+                        <!-- nombre de pages -->
+                        <condition/>
+                        <!-- état du manuscrit, déchirures etc -->
+                     </supportDesc>
+                     <!-- description des matériaux et marque -->
+                     <layoutDesc>
+                        <layout columns="4"/>
+                        <!-- existe aussi l'@writtenLines pr nb de lignes-->
+                     </layoutDesc>
+                     <!-- description de la mise en page -->
+                  </objectDesc>
+                  <!-- le codex lui-même -->
+                  <handDesc>
+                   <p></p>
+                  </handDesc>
+                  <bindingDesc>
+                     <p/>
+                  </bindingDesc>
+                  <!-- quel type de reliure ? cahier ou feuilles -->
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <listChange ordered="true">
+             
+             <!-- the latin grammar -->
+                  <change xml:id="s1a">Pascoli writes the structure of a latin grammar (ink).</change>
+                  <change xml:id="s1b">Pause and corrections.</change>
+               
+         
+                  <change xml:id="s2a">New version of the structure of the latin grammar (ink).</change>
+                  <change xml:id="s2b">Pause and corrections.</change>
+                  <change xml:id="s2c">Writing.</change>
+                  <change xml:id="s2d">Corrections.</change>
+                  <change xml:id="s2e">Writing.</change>
+                  <change xml:id="s2f">Corrections.</change>
+               
+       
+                  <change xml:id="s3a">New version of the second part of the latin grammar (ink).</change>
+                  <change xml:id="s3b">Corrections and writing.</change>
+               
+               <!-- title of Crepereia Tryphaena -->
+               <change xml:id="s4">Pascoli repeats the title of "Crepereia Tryphaena"</change>
+               
+               <!-- italian version of C. T. -->
+      
+                  <change xml:id="s5a">Pascoli writes an italian version of "Crepereia Tryphaena" (ink).</change>
+                  <change xml:id="s5b">Corrections and writing.</change>
+                  <change xml:id="s5d">Corrections and writing.</change>
+                  <change xml:id="s5e">Corrections and writing.</change>
+               
+
+                  <change xml:id="s6a">Writing the second stanza in latin. By Pascoli, using
+                     ink.</change>
+                  <change xml:id="s6b">Corrections.</change>
+                  <change xml:id="s6c">Corrections.</change>
+               
+               <change xml:id="s7">Notes in italian about "Crepereia Tryphaena", written by Pascoli
+                  using ink.</change>
+               <change xml:id="s8">Classification elements, written by Maria Pascoli using
+                  pencil</change>
+               <change xml:id="s9">Classification elements, written by the Archive, using
+                  pencil</change>
+
+            </listChange>
+         </creation>
+         <langUsage>
+            <language ident="it">italian</language>
+            <language ident="la">latin</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url=""/>
+      <!-- mettre ici le lien du facsimile -->
+   </facsimile>
+   <text>
+
+      <body resp="#Pascoli">
+         <div rend="text-align:left; color:grey;">
+            <metamark resp="#Archive" function="classification" change="#s9"
+               rend="pencil">LXII-3-1.3</metamark>
+         </div>
+         
+         <div rend="text-align:right;">
+            <metamark resp="#MariaPascoli" function="classification" change="#s8"
+               rend="pencil">7</metamark>
+         </div>
+         
+         <div xml:lang="it">
+            
+               <head change="#s1a" rend="text-align:center;">
+                  <w>Disegno</w>
+                  <w>di</w>
+                  <w>
+                     <choice>
+                        <abbr resp="#Pascoli">Gr.</abbr>
+                        <expan resp="#HyperPascoli">Grammatica</expan>
+                     </choice>
+                  </w>
+                  <w>
+                     <choice>
+                        <abbr resp="#Pascoli">lat.</abbr>
+                        <expan resp="#HyperPascoli">latina</expan>
+                     </choice>
+                  </w>
+               </head>
+               <lb/>
+            
+            <p>
+               <seg change="#s1a">
+                  <mod type="subst"  change="#s1b">
+                     <del rend="crossed_out">
+                        <seg change="#s1a">
+                           <w>Soggetto</w>
+                           <pc>-</pc>
+                           <w>oggetto</w>
+                           <pc>-</pc>
+                           <w>predicato</w>
+                           <w>
+                              <choice>
+                                 <abbr resp="#Pascoli">nom.</abbr>
+                                 <expan resp="#HyperPascoli">nominativo</expan>
+                              </choice>
+                           </w>
+                        </seg>
+                     </del>
+                     <add place="next">
+                        <w>complementi</w>
+                        <pc>.</pc>
+                        <mod><add place="above" change="#s1b">
+                           <w>
+                              <choice>
+                                 <abbr resp="#Pascoli">avverb.</abbr>
+                                 <expan resp="#HyperPascoli">avverbio</expan>
+                              </choice>
+                           </w>
+                        </add></mod>
+                        <w>
+                           <choice>
+                              <abbr resp="#Pascoli">predic.</abbr>
+                              <expan resp="#HyperPascoli">predicato</expan>
+                           </choice>
+                        </w>
+                        <w>oggetto</w>
+                     </add>
+                  </mod>
+                  <lb/>
+               </seg>
+               <seg change="#s2a">
+                  <w>Soggetto</w>
+                  <pc>-</pc>
+                  <w>oggetto</w>
+                  <pc>-</pc>
+                  <w>predicato</w>
+                  <pc>.</pc>
+                  <lb/>
+                  <w>Soggetto</w>
+                  <pc>-</pc>
+                  <w>predicato</w>
+                  <mod><add change="#s2b" rend="below"><!-- type substantive non autorisé -->
+                     <w>attributo</w>
+                     <pc>.</pc>
+                  </add></mod>
+                  <pc>-</pc>
+                  <w>
+                     <choice>
+                        <abbr resp="#Pascoli">nom.</abbr>
+                        <expan resp="#HyperPascoli">nominativo</expan>
+                     </choice>
+                  </w>
+                  <lb/>
+                  <w>oggetto</w>
+                  <pc>-</pc>
+                  <w>
+                     <mod type="subst"  change="#s2b">
+                        <del rend="overstrike"><seg change="#s2a"><unclear>m**</unclear></seg></del>
+                        <add rend="overwritten">
+                           <choice>
+                              <abbr resp="#Pascoli">acc.</abbr>
+                              <expan resp="#HyperPascoli">accusativo</expan>
+                           </choice>
+                        </add>
+                     </mod>
+                  </w>
+                  <lb/>
+                  <w>
+                     <choice>
+                        <abbr resp="#Pascoli">compl.</abbr>
+                        <expan resp="#HyperPascoli">complimenti</expan>
+                     </choice>
+                  </w>
+                  <w>avverbiali</w>
+                  <pc>.</pc>
+                  <seg>
+                     <!-- même ensemble, con preposizioni est la suite même si on saute une ligne. (zone?) -->
+                     <w>
+                        <choice>
+                           <abbr resp="#Pascoli">gen.</abbr>
+                           <expan resp="#HyperPascoli">genitivo</expan>
+                        </choice>
+                     </w>
+                     <w>
+                        <choice>
+                           <abbr resp="#Pascoli">dat,</abbr>
+                           <expan resp="#HyperPascoli">dativo</expan>
+                        </choice>
+                     </w>
+                     <w>
+                        <choice>
+                           <abbr resp="#Pascoli">abl.</abbr>
+                           <expan resp="#HyperPascoli">ablativo</expan>
+                        </choice>
+                     </w>
+                     <lb/>
+                     <w>con</w>
+                     <w>preposizioni</w>
+                  </seg>
+               </seg>
+            </p>
+            <p>
+               <seg change="#s2c"><!-- localiser sur page --><!-- TITRE -->
+                  <w>1&#x1D45;</w>
+                  <w>parte</w>
+                  <lb/>
+               </seg>
+            </p>
+            <p change="#s2c">
+               <w>Pronomi <mod><add change="#s2d" place="above">
+                     <metamark function="structure">/</metamark>
+                     <w>Lettere</w>
+                     <w>dell'</w>
+                     <w>alfabeto</w>
+                     <w>e</w>
+                     <w>accenti</w>
+                  </add></mod>
+               </w>
+               <lb/>
+               <w>Nomi.</w>
+               <w>
+                  <choice>
+                     <abbr resp="#Pascoli">sost.</abbr>
+                     <expan resp="#HyperPascoli">sostantivi</expan>
+                  </choice>
+               </w>
+               <lb/>
+               <metamark function="structure">/</metamark>
+               <pc>"</pc>
+               <w>
+                  <choice>
+                     <abbr resp="#Pascoli">agg.</abbr>
+                     <expan resp="#HyperPascoli">aggettivi</expan>
+                  </choice>
+               </w>
+               <lb/>
+               <pc>"</pc>
+               <w>numerali</w>
+               <pc>.</pc>
+               <lb/>
+               <w>Avverbi</w>
+               <pc>.</pc>
+               <lb/>
+               <w>Verbi</w>
+               <pc>.</pc>
+               <lb/>
+               <metamark function="structure">___</metamark>
+            </p>
+            <p change="#s2e">
+               <seg><!-- localiser sur page --><!-- TITRE DE PARTIE -->
+                  <w>2&#x1D45;</w>
+                  <w>parte</w>
+                  <pc>.</pc>
+               </seg>
+            </p>
+            <p change="#s2e">
+               <space extent="unknown"/>
+               <!-- taille à définir /zone différente de la page-->
+               <metamark function="structure">/</metamark>
+               <w>sintassi</w>
+               <w>
+                  <mod type="subst"  change="#s2f">
+                     <del rend="overstrike"><seg change="#s2e"
+                        ><unclear>comp****</unclear></seg></del>
+                     <add rend="overwritten">coordinata</add>
+                  </mod>
+               </w>
+               <w> e <mod><add place="above" change="#s2f"><w>correlativi</w></add></mod>
+                  <!--type substantive interdit-->
+               </w>
+               <w>subordinata</w>
+               <lb/>
+               <w>Particelle</w>
+               <w>
+                  <abbr resp="#Pascoli">cong.</abbr>
+                  <expan resp="#HyperPascoli">congiuntive</expan>
+               </w>
+               <metamark rend="left bracket as grouping mark" function="structure"/>
+               <w>declinabili</w>
+               <!-- ???? DECLINABILI / INDECLINABILI = 2 lignes (ouvertes par l'accolade)    -->
+               <w>indeclinabili</w><pc>.</pc>
+               <lb/>
+               <metamark function="structure">central line as end of a part</metamark>
+               <metamark function="space">.......</metamark>
+               <lb/>
+            </p>
+            <p change="#s3a">
+               <seg><!-- localiser sur page --><!-- TITRE DE PARTIE -->
+                  <w>2&#x1D45;</w>
+                  <w>parte</w>
+               </seg>
+            </p>
+            <p change="#s3a">
+               <metamark function="space" place="center">.......</metamark>
+               <lb/>
+               <w>Fonologia</w>
+               <lb/>
+               <mod><add change="#s3b">
+                  <w>Prosodia</w>
+                  <w>e</w>
+                  <w>Metrica</w>
+                  <pc>.</pc>
+               </add></mod>
+               <lb/>
+               <w>Morfologia</w>
+               <pc>.</pc>
+               <lb/>
+               <pc>.</pc>
+               <w>Sintassi</w>
+               <pc>.</pc>
+            </p>
+         </div>
+         <div change="#s4" xml:lang="la">
+            <p>
+               <metamark function="reflexion"><w>TRYPHAENA</w></metamark>
+               <!-- localisation : zone  -->
+            </p>
+            <space extent="unknown"/>
+            <!-- quantité à voir ou zone-->
+            <p>
+               <metamark function="reflexion"><w>TRYPHAENA</w></metamark>
+               <!-- localisation -->
+            </p>
+         </div>
+         <!--situer sur la page à côté de la fin de la 1e partie grammaire-->
+         <div change="#s5a" xml:lang="it">
+            <lg met="freeVersesAsSapphicStanza" corresp="#lg2" ana="a">
+               <l met="endecasillaboMin" corresp="#ln5" ana="a">
+                  <w corresp="#w18" ana="a">Quando</w>
+                  <seg corresp="#w18_w19" ana="a">
+                     <w>la</w>
+                     <w>terra</w>
+                     <pc>,</pc>
+                     <w>mossa</w>
+                     <w>dai</w>
+                     <w>fossori</w>
+                  </seg>
+                  <pc>,</pc>
+               </l>
+               <l corresp="#ln6" ana="a">
+                  <w corresp="#w23" ana="a">ti</w>
+                  <w corresp="#w24" ana="a">restituì</w>
+                  <seg corresp="#w27" ana="a">
+                     <w>al</w>
+                     <w>
+                        <mod type="subst"  change="#s5a" instant="true">
+                           <del rend="overstrike"><unclear>***</unclear></del>
+                           <add rend="overwritten">sole</add>
+                        </mod>
+                     </w>
+                  </seg>
+                  <seg corresp="#w25" ana="a">
+                     <w>di</w>
+                     <w>Maggio</w>
+                  </seg>
+                  <pc>,</pc><!-- la ponctuation pourrait aussi être parallélisée ? -->
+                  <seg corresp="#w26" ana="a">
+                     <w>o</w>
+                     <w>Crepereia</w>
+                  </seg>
+                  <pc>,</pc>
+               </l>
+               <mod type="subst"  change="#s5b" ana="alternative" cause="doubt">
+                  <del rend="crossed out">
+                     <l corresp="#ln10" ana="a" change="#s5a">
+                        <seg corresp="#w40" ana="a">
+                           <w>colla</w>
+                           <w>capigliatura</w>
+                           <w>di</w>
+                        </seg>
+                        <seg corresp="#w42" ana="a">
+                           <w>capel</w>
+                           <w>venere</w>
+                        </seg>
+                        <w corresp="#w44" ana="a">
+                           <abbr resp="#Pascoli">ondeg.</abbr>
+                           <expan resp="#HyperPascoli">ondeggiante</expan>
+                        </w>
+                     </l>
+                  </del>
+                  <add place="below">
+                     <l corresp="#ln7" ana="a">
+                        <seg corresp="#w72" ana="a">
+                           <w>adorna</w>
+                           <w>della</w>
+                           <w>tua</w>
+                           <w>corona</w>
+                        </seg>
+                        <pc>,</pc>
+                        <w corresp="#w31" ana="a">portando</w>
+                        <seg>
+                           <w>in</w>
+                           <!-- trouver un xml id pour lier les références hors de l'édition de référence -->
+                           <w>dito</w>
+                        </seg>
+                     </l>
+                  </add>
+               </mod>
+               <l corresp="#ln8" ana="a" met="freeVerseAsAdonic" change="#s5b">
+                  <w>la</w>
+                  <w corresp="#w28" ana="a">pronuba</w>
+                  <w corresp="#w33" ana="a">gemma</w>
+                  <pc>.</pc>
+               </l>
+            </lg>
+            <lg met="freeVersesAsSapphicStanza" change="#s5b">
+               <l corresp="#ln10 ln11" ana="b a">
+                  <mod type="subst"  change="#s5b" instant="true">
+                     <del rend="overstrike">
+                        <w>Il</w>
+                     </del>
+                     <add rend="overwritten">
+                        <w>la</w>
+                     </add>
+                  </mod>
+                  <w>tu <mod type="subst"  change="#s5b" instant="true">
+                        <del rend="overstrike">
+                           <w>o</w>
+                        </del>
+                        <add rend="overwritten">
+                           <w>a</w>
+                        </add>
+                     </mod>
+                  </w>
+                  <w corresp="#w40" ana="b">capigliatura</w>
+                  <w>di</w>
+                  <seg corresp="#w42" ana="b">
+                     <w>capel</w>
+                     <w>venere</w>
+                  </seg>
+               </l>
+               <l>
+                  <w>nera</w>
+                  <w corresp="#w72" ana="b">corona</w>
+                  <w corresp="#w44" ana="b">ondeggiava</w>
+                  <w corresp="#w41" ana="a">sull'</w>
+                  <w corresp="#w43" ana="a">aqua</w>
+                  <w corresp="#w34" ana="a">limpida</w>
+               </l>
+               <l>
+                  <w>che</w>
+                  <w>
+                     <mod type="subst"  cause="fix" ana="rewrite" instant="true">
+                        <del rend="overstrike">ti</del>
+                        <add rend="overwritten">ti</add>
+                     </mod>
+                  </w>
+                  <w>
+                     <mod type="subst"  change="#s5b" instant="true">
+                        <del rend="overstrike">
+                           <unclear>****deva</unclear>
+                        </del>
+                        <add rend="overwritten"><unclear>copr**va</unclear></add>
+                     </mod>
+                  </w>
+                  <w>il</w>
+                  <w>tuo</w>
+                  <w>corpo</w>
+                  <w>come</w>
+               </l>
+               <l met="freeVerseAsAdonic">
+                  <seg corresp="#w35" ana="a"><w>quello</w>
+                     <w>d'</w>
+                     <w>una</w>
+                     <w>naiade</w></seg>
+                  <pc>.</pc><!-- image à relier à  la suite -->
+               </l>
+            </lg>
+            <lg met="freeVerses" corresp="#lg4" ana="a" change="#s5b">
+               <l corresp="#ln8 ln9" ana="b a">
+                  <w>E</w>
+                  <w>io</w>
+                  <w corresp="#w29" ana="a">dopo</w>
+                  <seg corresp="#w32" ana="a">
+                     <w>un</w>
+                     <w>lungo</w>
+                     <w>tempo</w>
+                  </seg>
+                  <w corresp="#w30" ana="a">inimmaginabile</w>
+                  <seg xml:lang="la" corresp="#w30" ana="b">
+                     <pc>(</pc>
+                     <w>maior</w>
+                     <w>mente</w>
+                     <pc>)</pc>
+                  </seg>
+  
+               </l>
+               <l corresp="#ln15 ln16" ana="a">
+                  <w>sentii</w>
+                  <seg corresp="#w66" ana="a">
+                     <w>nel</w>
+                     <w>cuore</w>
+                  </seg>
+                  <seg corresp="#w64" ana="a">
+                     <w>un</w>
+                     <w>altro</w>
+                     <w>io</w>
+                  </seg>
+                  <pc>,</pc>
+                  <w>vidi</w>
+                  <w>nuova</w>
+                  <w>gente</w>
+                  <w>già</w>
+                  <w>veduta</w>
+                  <pc>,</pc>
+               </l>
+               <l corresp="#ln13 ln14" ana="a"><!-- référence à Myricae "I tre grappoli" sur la douleur : http://www.fondazionepascoli.it/2014/Poesie/My32.html -->
+                  <w corresp="#w54 w60" ana="a">piansi</w>
+                  <w corresp="#w59" ana="a">lagrime</w>
+                  <seg corresp="#w53" ana="a">
+                     <w>già</w>
+                     <w>piante</w>
+                  </seg>
+               </l>
+               <seg corresp="#lg8" ana="a">
+                  <l corresp="#ln29" ana="a">
+                     <w>E</w>
+                     <w corresp="#w125" ana="a">la</w>
+                     <w corresp="#w126" ana="a">notte</w>
+                     <pc>,</pc>
+                     <w>di</w>
+                     <w>te</w>
+                     <w>pensoso</w>
+                     <pc>,</pc>
+                     <w corresp="#w122" ana="a">gettai</w>
+                   
+                  </l>
+                  <l corresp="#ln30" ana="a">
+                     <seg corresp="#w127" ana="a">
+                        <w>nove</w>
+                        <w>volte</w>
+                     </seg>
+                     <w>le</w>
+                     <w corresp="#w120" ana="a">feve</w>
+                     <pc>,</pc>
+                     <w corresp="#w128" ana="a">invocando</w>
+                  </l>
+                  <l met="freeVerseAsAdonic" corresp="#ln31" ana="a">
+                     <seg corresp="#w131" ana="a">
+                        <w>i</w>
+                        <w>tuoi</w>
+                        <w>mani</w>
+                     </seg>
+                     <pc>.</pc>
+                  </l>
+               </seg>
+            </lg>
+            <lg met="freeVerses" corresp="#lg9 lg14" ana="a" change="#s5b">
+               <l>
+                  <w>E</w>
+                  <w>non</w>
+                  <w>dissi</w>
+                  <w xml:lang="la">exite</w>
+                  <w>e</w>
+               </l>
+               <l>
+                  <w xml:lang="la" corresp="#w150" ana="a">respexi</w>
+                  <w>e</w>
+                  <w>ti</w>
+                  <w>vidi</w>
+                  <pc>,</pc>
+                  <w>o</w>
+                  <w xml:lang="la">Tryphaena</w>
+                  <pc>,</pc>
+               </l>
+            </lg>
+            <lg met="freeVerses" change="#s5b">
+               <l>
+                  <mod type="subst"  change="#s5d">
+                     <del rend="crossed out">
+                        <seg change="#s5b">
+                           <w>Mi</w>
+                           <w>ricordo</w>
+                        </seg>
+                     </del>
+                     <add place="below">
+                        <w>o</w>
+                        <w>Tryphaena</w>
+                        <pc>,</pc>
+                        <w corresp="#w162" ana="a">così</w>
+                        <w corresp="#w163" ana="a">eri 
+                           <mod><add change="#s5d" place="above"><w>come</w></add></mod><!-- correction immédiate, mais "come" après "eri". -->
+                        </w>
+                        <pc>,</pc>
+                        <w>quando</w>
+                     </add>
+                  </mod>
+               </l>
+               <l change="#s5d">
+                  <mod type="subst"  instant="true">
+                     <del rend="overstrike">**********</del>
+                     <add><w><unclear reason="illegible">****enavi</unclear></w></add>
+                  </mod>
+                  <pc>-</pc>
+                  <w>casa</w>
+                  <w>
+                     <mod type="subst"  change="#s5d" instant="true">
+                        <del rend="overstrike"><unclear>**le</unclear></del>
+                        <add rend="overwritten">dove</add>
+                     </mod>
+                  </w>
+                  <w>le</w>
+                  <!-- à relier avec brouillons d'après -->
+                  <w>siepi</w>
+               </l>
+               <l change="#s5d">
+                  <w>di</w>
+                  <w>Maggio</w>
+                  <pc>..</pc>
+               </l>
+            </lg>
+            <lg met="freeVerses">
+               <l>
+                  <mod type="subst"  change="#s5e">
+                     <del rend="crossed out">
+                        <seg change="#s5d">
+                           <w>Così</w>
+                           <w>dove</w>
+                           <w>ti</w>
+                        </seg>
+                     </del>
+                     <add place="below">
+                        <w>Tu</w>
+                        <w>portavi</w>
+                        <w>il</w>
+                        <w xml:lang="la">flammeum</w>
+                        <!-- à relier avec brouillons d'après -->
+                        <pc>...</pc>
+                     </add>
+                  </mod>
+               </l>
+               <l change="#s5e">
+                  <!-- strophe à relier avec brouillons suivants -->
+                  <pc>.</pc>
+                  <w>e</w>
+                  <w>il</w>
+                  <w>mio</w>
+                  <w>dono</w>
+                  <pc>...</pc>
+               </l>
+            </lg>
+            <lg corresp="#lg13" ana="a" change="#s5e">
+               <l>
+                  <w>Ma</w>
+                  <w>te</w>
+                  <w>non</w>
+               </l>
+               <l>
+                  <pc>....</pc>
+               </l>
+            </lg>
+            <lg met="sapphicStanza" corresp="#lg2" ana="b" xml:lang="la" change="#s6a">
+               <l corresp="#ln5" ana="b">
+                  <w corresp="#w18" ana="b">Cum</w>
+                  <w corresp="#w19" ana="b">solum</w>
+                  <mod type="subst"  change="#s6c">
+                     <!--  on ne sait pas vraiment quand a lieu cet ajout mais encre plus foncée -->
+                     <del rend="completed">
+                        <seg change="#s6a">
+                           <space extent="xlsslslx"/>
+                        </seg>
+                     </del>
+                     <add rend="overwritten">
+                        <w>effossam</w>
+                        <seg met="slslx"><metamark function="space">.....</metamark></seg>
+                     </add>
+                     <add rend="above"><!-- correction immédiate après effossam mais dans le même geste  -->
+                        <w>sic</w>
+                        <w>te</w>
+                        <pc>,</pc>
+                        <space extent="sslslx"/>
+                     </add>
+                  </mod>
+               </l>
+               <l corresp="#ln6" ana="b">
+                  <w corresp="#w24" ana="b">redditit</w>
+                  <w corresp="#w25" ana="b">mai
+                     <mod type="subst"  change="#s6b" cause="syntax">
+                        <del rend="overstrike"><seg change="#s6a">o</seg></del>
+                        <add rend="overwritten">ae</add>
+                     </mod>
+                  </w>
+                  <pc>,</pc>
+                  <w corresp="#w26" ana="b">Crepereia</w>
+                  <pc>,</pc>
+                  <mod type="subst"  ana="alternative" cause="doubt" change="#s6b">
+                     <del rend="substituted"><w corresp="#w27" ana="b">soli</w></del>
+                     <add place="above"><w corresp="#w27" ana="c">luci</w>
+                     </add>
+                  </mod>
+                  <pc>,</pc>
+               </l>
+               <l corresp="#ln7" ana="b">
+                  <w corresp="#w28">pronubam</w>
+                  <seg met="xl"><metamark function="space">....</metamark></seg>
+                  <w>digito</w>
+                  <!-- à relier avec in dito au début du document : trouver un code de xml:id-->
+                  <w corresp="#w31" ana="b">gerentem</w>
+               </l>
+               <l corresp="#ln8" ana="c" met="adonic">
+                  <w>
+                     <mod><del change="#s6c" rend="crossed out"><seg change="#s6a">mortua</seg></del></mod>
+                  </w>
+                  <pc>,</pc>
+                  <w corresp="#w33" ana="b">gemmam</w>
+                  <pc>.</pc>
+               </l>
+            </lg>
+         </div>
+         <div xml:lang="it" change="#s7" rend="text-align:right; rightColumn">
+            <p>
+               <lb/>
+               <w>Riposa</w>
+               <space quantity="1" unit="cm"/>
+               <w>sul</w>
+               <w>braccio</w>
+               <w>sinistro</w>
+               <w>in</w>
+               <w>modo</w>
+               <w>di</w>
+               <w>formare</w>
+               <w>una</w>
+               <w><unclear>cur</unclear></w>
+               <lb/>
+               <space quantity="1" unit="lines"/>
+               <w>Att</w>
+               <metamark function="reflexion">
+                  <lb/>
+                  <pc> . . . . . .... . .</pc>
+                  <pc> . . . . . .</pc>
+               </metamark>
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>
