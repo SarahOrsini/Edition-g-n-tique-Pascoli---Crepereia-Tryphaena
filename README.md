@@ -1,4 +1,4 @@
-# Edition-g-n-tique-Pascoli---Crepereia-Tryphaena
+# Edition_genetique_Pascoli_Crepereia-Tryphaena
 Edition génétique XML-TEI d'un échantillon de brouillons : le dossier génétique du poème "Crepereia Tryphaena" de Giovanni Pascoli
 
 Encodage XML-TEI d'un dossier de brouillons des archives en ligne du poète Giovanni Pascoli : http://pascoli.archivi.beniculturali.it/index.php?id=2
